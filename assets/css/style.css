@@ -624,6 +624,7 @@ h6 {
   width: 100%;
   padding: 0;
   background: linear-gradient(to right, #ce6ef3, #3f74f8);
+  z-index: 99999;
 }
 
 .navbar-1 .dropdown-menu.active {
