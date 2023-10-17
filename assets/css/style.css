@@ -1,9 +1,7 @@
 /* ==============================================================
 
 Theme Name	: Your-App HTML
-Theme URI	: Minimal Themes
-Author		: Minimal Themes
-Author URI	: https://themeforest.net/user/minimalthemes
+Author		: Hisham Karaman
 Description	: Responsive Portfolio Template
 Version		: 1.0.0
 
@@ -11,8 +9,6 @@ Version		: 1.0.0
 *                     ~TABLE OF CONTENTS~                       *
 =================================================================
 01. FONTS INSTALLER
-    1.1 Poppins
-    1.2 Open Sans
 
 02. GENERAL
 	2.1 Social Links
@@ -63,60 +59,8 @@ Version		: 1.0.0
  *    01. FONTS INSTALLER    *
  *===========================*/
 /**
- * 1.1 Poppins
+ * 1.1 SOMARSANS
  */
-@font-face {
-  font-family: somar;
-  src: url('../fonts/poppins/Poppins-Regular.eot');
-  src: url('../fonts/poppins/Poppins-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
-    url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Regular.ttf') format('truetype'),
-    url('../fonts/poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins-Medium';
-  src: url('../fonts/poppins/Poppins-Medium.eot');
-  src: url('../fonts/poppins/Poppins-Medium.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/poppins/Poppins-Medium.woff2') format('woff2'),
-    url('../fonts/poppins/Poppins-Medium.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Medium.ttf') format('truetype'),
-    url('../fonts/poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-/**
- * 1.2 Open Sans
- */
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/opensans/OpenSans-Regular.eot');
-  src: url('../fonts/opensans/OpenSans-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Regular.woff2') format('woff2'),
-    url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/opensans/OpenSans-Bold.eot');
-  src: url('../fonts/opensans/OpenSans-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
-    url('../fonts/opensans/OpenSans-Bold.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Bold.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
 @font-face {
   font-family: "somar";
   src: url("../fonts/SOMARSANS-REGULAR.TTF") format("truetype");
@@ -256,7 +200,10 @@ h6 {
 }
 @media (max-width: 991px) {
   .los-img {
-    max-width: 100%;
+    display: none;
+  }
+  #section-footer .social-links {
+    text-align: center !important;
   }
 }
 /**
@@ -673,7 +620,7 @@ h6 {
 .navbar-1 {
   background-color: transparent;
   z-index: 9;
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 0;
   background: linear-gradient(to right, #ce6ef3, #3f74f8);
@@ -1662,7 +1609,7 @@ a.animated-button.style2:hover:after {
   width: 100%;
   max-width: 195px;
   border: none;
-  margin-right: -55px;
+  /* margin-right: -55px; */
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2706,6 +2653,7 @@ a.animated-button.style2:hover:after {
   }
   #section-slider1 .swiper-slide .slider-content .left {
     transform: none;
+    text-align: center;
   }
   #section-slider1 .swiper-slide .slider-content .left li {
     width: 45%;
@@ -2943,7 +2891,7 @@ a.animated-button.style2:hover:after {
     font-size: 20px;
   }
   #section-blogdetail1 .contents .share .social-links {
-    text-align: left;
+    text-align: right;
   }
   #section-blogdetail1 .contents .share .social-links a {
     margin-left: 0;
